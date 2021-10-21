@@ -1,0 +1,32 @@
+stages:
+  - build
+  - deploy
+  - pub
+
+GoBuild:
+  stage: build
+  script:
+    - docker build -t mygo:v1  .
+  after_script:
+    - docker rmi $(docker images -af "dangling=true" -q)
+  tags:
+    - go
+
+GoDeploy:
+  stage: deploy
+  script:
+    - docker tag  mygo:v1  172.17.70.145:5000/mygo:v1
+    - docker push 172.17.70.145:5000/mygo:v1
+  after_script:
+    - docker rmi 172.17.70.145:5000/mygo:v1
+    - docker rmi mygo:v1
+  tags:
+    - go
+GoPub:
+  stage: pub
+  script:
+    - kubectl get pod -n myweb| grep mygo | awk '{print $1}'  | xargs kubectl delete pod -n myweb
+  tags:
+    - go
+
+
