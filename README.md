@@ -1,5 +1,5 @@
 
-![image](https://csdn.52wike.com/wike_blog/2021-10-22/fd92e46d-5dcc-4d35-9415-89d425da297b.png)# wike学习整理
+# wike学习整理
 
 ## 前言
 
