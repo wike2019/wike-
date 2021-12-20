@@ -2,7 +2,7 @@
 # wike学习整理
 
 ## 目录
-[1.  k8s安装](https://wike2019.github.io/wike-blog/k8s/k8s安装.vue)
+[1.  k8s安装](https://wike2019.github.io/wike-blog/k8s/k8s安装)
 
 
 ## 关于我
