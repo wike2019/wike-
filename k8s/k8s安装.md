@@ -52,6 +52,8 @@ vi /etc/selinux/config  //将SELINUX=enforcing改为SELINUX=disabled
 
 hostnamectl set-hostname k8s-xxx
 
+vi /etc/hosts //使每个节点能通过hostname ping通
+
 ```
 
 6 修改配置
