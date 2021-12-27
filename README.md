@@ -31,7 +31,7 @@
 
 [11. k8s](https://wike2019.github.io/wike-blog/k8s)
 
-
+[12. 运维](https://wike2019.github.io/wike-blog/运维)
 ## 关于我
 
 一名全栈工程师，前端界的老油条，对技术有一定的追求，热爱分享，文笔有点差，希望通过不断的写作能有提高。
