@@ -3,11 +3,11 @@
 
 ## 目录
 
-[1.  grep命令](https://wike2019.github.io/wike-blog/k8s/grep命令)
+[1.  grep命令](https://wike2019.github.io/wike-blog/运维/grep命令)
 
-[2.  sed命令](https://wike2019.github.io/wike-blog/k8s/sed命令)
+[2.  sed命令](https://wike2019.github.io/wike-blog/运维/sed命令)
 
-[3.  awk命令](https://wike2019.github.io/wike-blog/k8s/awk命令)
+[3.  awk命令](https://wike2019.github.io/wike-blog/运维/awk命令)
 ## 关于我
 
 一名全栈工程师，前端界的老油条，对技术有一定的追求，热爱分享，文笔有点差，希望通过不断的写作能有提高。
