@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b911f1a9-6acb-42e6-a78e-210c9db58f12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/其他/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/其他/.gitlab-ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/其他/38.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/其他/pub.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/其他/正则表达式.md" beforeDir="false" afterPath="$PROJECT_DIR$/其他/正则表达式.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639999367265</updated>
       <workItem from="1639999369467" duration="2833000" />
-      <workItem from="1640172597387" duration="1064000" />
+      <workItem from="1640172597387" duration="1330000" />
     </task>
     <servers />
   </component>
