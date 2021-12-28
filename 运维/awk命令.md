@@ -84,6 +84,218 @@ RS                 控制记录分隔符
 此外,$0变量是指整条记录。$1表示当前行的第一个域,$2表示当前行的第二个域,......以此类推。
 
 
+案例-补充：
+```
+[root@dev01 yeyz_shell]# cat awk_test.txt 
+this is a test file 
+this is a test file 
+this is a test file 
+this is a test file 
+this is a test file 
+[root@dev01 yeyz_shell]# cat awk_test.txt | awk '{print $1,$2}'
+this is
+this is
+this is
+this is
+this is
+```
+
+其中 awk '{print $1,$2}'是指打印出这个文件的第一列和第二列。当我们不指定分隔符的时候，awk会默认按照空格来进行分割，当字符中间的空格有多个的时候，awk会将连续的空格理解为一个分隔符。
+
+当我们使用awk '{print $0}'的时候，会将这一列的值全部打印出来。如果需要拼接字符串的话，只需要在print的后面添加你想要拼接的字符串即可，如下：
+
+```
+[root@dev01 yeyz_shell]# cat awk_test.txt | awk '{print $1,$2,$3,"dog"}'
+this is a dog
+this is a dog
+this is a dog
+this is a dog
+this is a dog
+这里需要注意的是，$1和$2的两边不能加引号。
+```
+
+如何在收尾添加相关字符
+
+首先我们再次给出awk的使用方法：
+
+awk [option] 'pattern{action}' file1,file2,...filen
+
+上面的例子说明了当action为print的时候，我们的测试结果，那么关于pattert，我们可以做如下测试。
+
+如果我们想在awk的前后添加相关的声明信息，可以通过下面的方式：
+
+```
+[root@dev01 yeyz_shell]# cat awk_test.txt | awk 'begin{print "this is awk result:"} {print $1,$2,$3,"dog"} end{print "awk end"}'
+this is a dog
+this is a dog
+this is a dog
+this is a dog
+this is a dog
+[root@dev01 yeyz_shell]# cat awk_test.txt | awk 'BEGIN{print "this is awk result:"} {print $1,$2,$3,"dog"} END{print "awk end"}'
+this is awk result:
+this is a dog
+this is a dog
+this is a dog
+this is a dog
+this is a dog
+awk end
+```
+可以看到，当我们把pattern的模式设置问BEGIN或者END的时候，它就可以在我们输出文件的时候，添加文件的首尾字符串，需要注意的是，BEGIN和END不能写为begin或者end。
+
+
+分隔符
+再次给出awk的基本语法：
+
+awk [option] 'pattern{action}' file1,file2,...filen
+
+上面两个例子，分别给出了awk命令关于例子1中的分隔符，我们在这个例子中详细说说，话不多说，看例子：
+
+```
+[root@dev01 yeyz_shell]# cat awk_test.txt 
+this#is#a#test##file 
+this#is#a#test##file 
+this#is#a#test##file 
+this#is#a#test##file 
+[root@dev01 yeyz_shell]# cat awk_test.txt | awk -F# '{print $1,$2}' 
+this is
+this is
+this is
+this is
+```
+可以看到，当我们使用awk -F#的时候，awk命令就是用#作为分割符号，来分割这个文件中的内容了。
+
+
+内置变量和自定义变量
+
+上面三个例子分别从option、pattern以及action三个方面对awk命令进行了一些介绍，接下来我们看看awk命令当中的有些内置变量，常用的内置变量有：
+
+NR   行号，当前处理文本行的行号
+
+NF   当前行的字段的个数
+
+FNR  个文件分别计数的行号
+
+FILENAME  文件名称
+
+FS   输入字段分隔符
+
+OFS  输出字段分隔符
+
+ARGC以及ARGV   数组以及命令行参数的个数
+
+下面分别对这些变量进行举例说明：
+
+FS  和  OFS  输入输出字段分隔符
+
+FS的作用：
+
+```
+[root@dev01 yeyz_shell]# cat awk_test.txt 
+this#is#a#test##file 
+this#is#a#test##file 
+this#is#a#test##file 
+this#is#a#test##file 
+[root@dev01 yeyz_shell]# cat awk_test.txt | awk -v FS='#' '{print $2,$3}'
+is a
+is a
+is a
+is a
+```
+
+FS使用#作为分隔符，对于输入的字符串进行处理。
+
+下面的例子是OFS使用-作为分隔符，输出文件中的内容：
+
+```
+[root@dev01 yeyz_shell]# cat awk_test2.txt 
+this is a shell program
+this is a shell program
+this is a shell program
+this is a shell program
+[root@dev01 yeyz_shell]# cat awk_test2.txt | awk -v OFS='-' '{print $2,$3,$4}'
+is-a-shell
+is-a-shell
+is-a-shell
+is-a-shell
+```
+
+NR和NF   行数和每一行的列数
+
+测试样例如下：
+```
+[root@dev01 yeyz_shell]# cat awk_test3.txt 
+this is a test program
+this is a shell test program
+[root@dev01 yeyz_shell]# cat awk_test3.txt | awk '{print NR,NF}'
+ 
+ ```
+结果显示，第一行有五个单词，第二行有六个单词
+
+FNR和NR的区别
+```
+[root@dev01 yeyz_shell]# cat awk_test3.txt 
+this is a test program
+this is a shell test program
+[root@dev01 yeyz_shell]# cat awk_test4.txt 
+this#is#a#test#program
+this#is#a#shell#test#program
+[root@dev01 yeyz_shell]# awk {'print NR,$0'} awk_test3.txt awk_test4.txt 
+ this is a test program
+ this is a shell test program
+ this#is#a#test#program
+ this#is#a#shell#test#program
+[root@dev01 yeyz_shell]# awk {'print FNR,$0'} awk_test3.txt awk_test4.txt 
+ this is a test program
+ this is a shell test program
+ this#is#a#test#program
+ this#is#a#shell#test#program
+```
+
+从测试可知，FNR是把不同文件的行号进行了区分，而NR没有对文件的行号进行区分。
+
+FILENAME  显示文件名称
+
+```
+[root@dev01 yeyz_shell]# awk {'print FILENAME,FNR,$0'} awk_test3.txt awk_test4.txt 
+awk_test3.txt  this is a test program
+awk_test3.txt  this is a shell test program
+awk_test4.txt  this#is#a#test#program
+awk_test4.txt  this#is#a#shell#test#program
+```
+这个还是比较好理解的。
+ARGC和ARGV
+
+其中ARGV是一个数组，数组包含下标，使用下标可以访问数组中的文件名称，如下：
+
+```
+[root@dev01 yeyz_shell]# awk 'BEGIN{print "aaa",ARGV[1]}' test1 test2
+aaa test1
+
+[root@dev01 yeyz_shell]# awk 'BEGIN{print "aaa",ARGV[2]}' test1 test2
+aaa test2
+
+[root@dev01 yeyz_shell]# awk 'BEGIN{print "aaa",ARGV[0],ARGV[1],ARGV[2]}' test1 test2
+aaa awk test1 test2
+
+[root@dev01 yeyz_shell]# awk 'BEGIN{print "aaa",ARGV[0],ARGV[1],ARGV[2],ARGC}' test1 test2
+aaa awk test1 test2 
+```
+
+需要注意的是，ARGV[0]指的是awk这个命令，这一点是awk命令规定的，其他的参数都是值得是后面处理的文件的名称，ARGC指的是ARGV数组的值的个数，在本例子中，它的值是3。
+
+自定义变量
+
+以上就是awk的内置变量，如果我们要自定义自己想要的变量，可以通过下面的方式来进行定义：
+
+```
+[root@dev01 yeyz_shell]# awk -v var='yeyz' 'BEGIN{print var}'
+yeyz
+[root@dev01 yeyz_shell]# awk  'BEGIN{ var2="yyy" ; print var2}'
+yyy
+```
+当变量写在{}外面的时候，需要使用-v参数，当变量写在{}里面的时候，不需要写-v参数，但是需要注意的是，二者都需要写上BEGIN这个模式。
+
+
 ## 小结:
 
 如果需要从输入的数据文件夹中取出特定的文本行,主要的工具为 grep 程序.
