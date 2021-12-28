@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b911f1a9-6acb-42e6-a78e-210c9db58f12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/运维/awk命令.md" beforeDir="false" afterPath="$PROJECT_DIR$/运维/awk命令.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639999367265</updated>
       <workItem from="1639999369467" duration="2833000" />
-      <workItem from="1640172597387" duration="5342000" />
+      <workItem from="1640172597387" duration="5426000" />
     </task>
     <servers />
   </component>
