@@ -83,7 +83,8 @@ RS                 控制记录分隔符
 此外,$0变量是指整条记录。$1表示当前行的第一个域,$2表示当前行的第二个域,......以此类推。
 
 
-案例-补充：
+## 案例-补充：
+
 ```
 [root@dev01 yeyz_shell]# cat awk_test.txt 
 this is a test file 
