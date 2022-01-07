@@ -3,7 +3,7 @@
 
 ## 目录
 
-[1.  Virtual DOM 算法简单介绍)](https://wike2019.github.io/wike-blog/Vue/Virtual DOM 算法简单介绍)
+[1.  VirtualDOM算法简单介绍](https://wike2019.github.io/wike-blog/Vue/VirtualDOM算法简单介绍)
 
 [2.  vue2源码分析](https://wike2019.github.io/wike-blog/Vue/vue2源码分析)
 

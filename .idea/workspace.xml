@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b911f1a9-6acb-42e6-a78e-210c9db58f12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/vue3写作指南.md" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/vue3写作指南.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/前端领域/Virtual DOM 算法简单介绍.md" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/Virtual DOM 算法简单介绍.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/收集网页.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <workItem from="1639999369467" duration="2833000" />
       <workItem from="1640172597387" duration="6014000" />
       <workItem from="1640869544314" duration="3555000" />
-      <workItem from="1641535529470" duration="2022000" />
+      <workItem from="1641535529470" duration="2058000" />
     </task>
     <servers />
   </component>
