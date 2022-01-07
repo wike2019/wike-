@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b911f1a9-6acb-42e6-a78e-210c9db58f12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Go/令牌桶算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/Go/令牌桶算法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Go" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -61,6 +62,7 @@
       <workItem from="1639999369467" duration="2833000" />
       <workItem from="1640172597387" duration="6014000" />
       <workItem from="1640869544314" duration="3555000" />
+      <workItem from="1641535529470" duration="375000" />
     </task>
     <servers />
   </component>
