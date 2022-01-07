@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b911f1a9-6acb-42e6-a78e-210c9db58f12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/vue3写作指南.md" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/vue3写作指南.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/前端领域/Virtual DOM 算法简单介绍.md" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/Virtual DOM 算法简单介绍.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/收集网页.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +42,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Go" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Vue" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Vue" />
+      <recent name="$PROJECT_DIR$/前端领域" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Go" />
       <recent name="$PROJECT_DIR$/其他" />
-      <recent name="$PROJECT_DIR$/运维" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Vue" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -62,7 +69,7 @@
       <workItem from="1639999369467" duration="2833000" />
       <workItem from="1640172597387" duration="6014000" />
       <workItem from="1640869544314" duration="3555000" />
-      <workItem from="1641535529470" duration="375000" />
+      <workItem from="1641535529470" duration="2022000" />
     </task>
     <servers />
   </component>

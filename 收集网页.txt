@@ -1,7 +1,0 @@
-https://www.jianshu.com/p/dde6a01c4094
-https://learnku.com/articles/23433/golang-learning-notes-four-archivetar-package-compression-and-decompression
-https://learnku.com/articles/23434/golang-learning-notes-five-archivezip-to-achieve-compression-and-decompression
-https://zhuanlan.zhihu.com/p/73690883
-https://syaning.github.io/go-pkgs/bufio/#writer
-https://syaning.github.io/go-pkgs/bytes/#reader
-https://blog.csdn.net/ArchyLi/article/details/78116195
