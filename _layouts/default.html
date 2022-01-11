@@ -12,40 +12,154 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     {% include head-custom.html %}
+    <style>
+
+        /*网站样式*/
+        a{color:#333;}
+        .container{
+            width: 1440px;margin:40px auto;
+            padding-bottom:30px;
+        }
+        aside{width:215px;float: left}
+        .logo{font-size:34px;text-align:center}
+        .title{text-align:center;position:relative;font-size:20px;font-weight: normal}
+        .title:after{content: " ";border-bottom:1px solid #333;display:block}
+        .title span{background:#fff;display: inline-block;position:relative;top:14px;padding:0 10px}
+
+        .profile{margin-top:40px}
+        .profile img{width:180px;display: block;margin: auto}
+        .profile p{margin:10px 18px;}
+
+        .main_nav{margin-top:30px}
+        .main_nav p{margin:15px;font-size:15px;cursor:pointer;font-weight:300;}
+        .main_nav i{margin-right:10px;color:#bbb;}
+
+        .search{margin:10px 13px;border:1px solid #ccc;;position: relative}
+        .search input[type="text"]{border:none;padding:6px 5px 6px 10px ;color:#aaa;padding-right:25px;width:100%;box-sizing: border-box;line-height:20px}
+        .search button{position: absolute;right:8px;top:3px;;background:transparent;border: none;color:#aaa;font-size:18px;cursor: pointer}
+
+
+
+        .hot_article{margin-top:20px}
+        .hot_article>li>div{margin:20px 0}
+        .hot_article img{float: left;width:70px;vertical-align:middle;margin-top:5px}
+        .hot_article .box_article{margin-left:80px;line-height:2;font-size:12px}
+        .hot_article  time{font-weight:300;margin-top:5px}
+
+        .firend_link{margin-top:30px;overflow:hidden;margin-bottom:20px}
+        .firend_link li{float:left;margin:5px 8px }
+
+        .firend_link li a{color:#333;font-size: 15px}
+
+
+        .hot_tag{margin-top:25px;overflow: hidden}
+        .hot_tag li{border:1px solid #ccc;display:inline-block;padding:5px 8px;margin:5px 3px;cursor: pointer}
+
+
+        .main_list,.main_detail,.main_down_list,.main_project_list,.main_code_list,.main_collect_list{margin-left:250px}
+        .article_item{margin-bottom:30px;border-bottom:1px solid #eee;padding-bottom:15px}
+        .article_item h3{text-align: center;font-size:28px;font-weight:500 }
+        .article_item>.info{text-align:center;color:#bbbbbb;margin:10px}
+        .info time,.info span{margin:0 10px}
+        .info i{margin-right:8px}
+
+        .desc{margin:20px 30px;font-size:18px;line-height:2}
+        .cover{margin:20px ;}
+        .cover img{display: block;width:100%}
+
+        .read_more{    padding: 10px;border: 1px solid #795548;color: #795548;background:transparent;display:block;margin:30px auto;width:120px;cursor: pointer}
+
+        .page {margin:40px 0;overflow: hidden}
+        .page button{    padding: 10px;border: none;color: #795548;background:transparent;cursor: pointer}
+        .page .up_page{float:left;margin-left:20px;font-size:20px;}
+        .page .down_page{float:right;margin-right:20px;font-size:20px;}
+
+        .pay_info{margin:100px 0;text-align:center;font-size:18px}
+        .pay_info img{width:300px}
+
+        .main_down_list h2,.main_project_list h2,.main_code_list h2,.main_collect_list h2{font-size:26px;margin-bottom:20px;margin-left:20px}
+        .download_item h3{font-size:14px;margin-bottom:10px}
+        .download_item{box-shadow:1px 1px 10px rgba(0,0,0,0.2);width:300px;padding:25px;display: inline-block;margin:20px}
+        .download_item p{line-height:2;margin-bottom:20px;width:100%;height:50px;overflow: hidden}
+        .download_href{border:1px dashed #ccc;color:#000;padding:5px 10px;border-radius:5px;}
+
+
+        .project_item,.collect_item{margin:20px;border-bottom:1px dashed #eee;padding:20px 5px;color:#111;cursor: pointer}
+        .project_item h3,.collect_item h3,.main_detail h3{font-size:16px;}
+        .project_item h3 span:first-child,.main_detail h3 span:first-child{margin-left:15px}
+        .project_item h3 span,.main_detail h3 span{background:#ddd;padding:2px 10px;margin:0 6px;font-size:12px;border-radius:5px}
+        .project_item p{line-height:1.6;margin:20px 5px 10px 5px}
+
+        .project_item a{color:#333;}
+        .address_info{color:#333;display: block;font-weight: bold;margin-left:5px}
+        .address_info a{padding-left:5px}
+
+        .code_list{margin:5px 20px;width:100%;cursor: pointer;}
+        .code_list th{background:#555;color:#fff;border: none;line-height:2;font-size:14px}
+        .code_list td{font-size:12px;text-align:center;line-height:2;padding:5px 0}
+        .code_list tr:nth-child(2n){background:#eee}
+        .code_list td{border-bottom:1px solid #ccc}
+        .main_code_list .search{margin:20px;width:100%}
+
+        .collect_item{box-shadow:1px 1px 10px rgba(0,0,0,0.2);padding:30px 20px}
+        .collect_item p{line-height:2;margin:10px 2px}
+        .collect_item  a{color:#111
+        }
+        .main_detail h3{margin-left:20px;margin-bottom:10px;border-bottom:1px #bbbbbb dashed;line-height:2.5;padding-bottom:10px}
+
+        .github h4{font-size:14px;margin-left:22px;margin-top:10px;margin-bottom:15px}
+        .github a{display: block;font-weight:bold;color:#333;margin-left:22px;margin-top:10px;margin-bottom:15px}
+
+        .pre{white-space: pre-line;line-height:1.6;margin:20px;font-size:14px}
+
+        .main_title{font-size:26px;text-align: center;line-height: 2;margin-bottom:10px;}
+    </style>
 </head>
 <body>
 <div class="wrapper">
-    <header>
-        <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
-        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+    <div class="container">
+        <aside>
+            <h1 class="logo"><a href="https://wike2019.github.io/wike-blog">WIKE 小站</a></h1>
+            <h2 class="title">
+                <span>关于作者</span>
+            </h2>
+            <div class="profile">
+                <img src="https://wikecloud.oss-cn-hangzhou.aliyuncs.com/base/8b79008ea545dfe626d9eeb4fca95026.jpg" alt="">
+                <p>热爱编程和分享的全栈程序员</p>
+            </div>
+            <h2 class="title">
+                <span>导航</span>
+            </h2>
+            <nav class="main_nav">
+                <p><a href="https://wike2019.github.io/wike-blog"><i class="fa fa-address-book"></i> 主页</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/Vue"><i class="fa fa-file-word-o"></i> Vue</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/算法"><i class="fa fa-book"></i> 算法</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/操作系统"><i class="fa fa-book"></i> 操作系统</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/Go"><i class="fa fa-book"></i>Go</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/Css"><i class="fa fa-book"></i>Css</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/前沿资讯"><i class="fa fa-book"></i> 前沿资讯</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/架构"><i class="fa fa-book"></i> 架构</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/其他"><i class="fa fa-book"></i> 其他</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/前端领域"><i class="fa fa-book"></i> 前端领域</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/推荐书籍"><i class="fa fa-book"></i> 推荐书籍</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/k8s"><i class="fa fa-book"></i> k8s</a></p>
+                <p><a href="https://wike2019.github.io/wike-blog/运维"><i class="fa fa-book"></i> 运维</a></p>
+            </nav>
 
-        <ul>
-            <li><a class="buttons " href="https://wike2019.github.io/wike-blog/">博客首页</a></li>
-            <li><a class="buttons " href="http://resume.ng2-oa.com/">本人简历</a></li>
-            <li><a class="buttons " href="https://github.com/wike2019/">开源项目</a></li>
-
-            <li><a class="buttons github" href="{{ site.github.repository_url }}">查看github</a></li>
-        </ul>
-
-        {% if site.github.is_project_page %}
-        <p class="header">项目所有者<a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-        <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-        </ul>
-        {% endif %}
-    </header>
-
-    <section>
-        {{ content }}
-    </section>
-
-    <footer>
-      欢迎访问本博客，本人qq:200569525
-    </footer>
-</div>
-<!--[if !IE]><script>fixScale(document);</script><![endif]-->
-</body>
-</html>
+            <h2 class="title">
+                <span>友情链接</span>
+            </h2>
+            <ul class="firend_link">
+                <li><a href="">前端视角</a></li>
+                <li><a href="">木马TC个人博客</a></li>
+                <li><a href="">云计算</a></li>
+            </ul>
+            <h2 class="title">
+                <a href="http://resume.ng2-oa.com/">个人简历</a>
+            </h2>
+        </aside>
+        <section>
+            {{ content }}
+        </section>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
