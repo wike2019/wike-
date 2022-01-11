@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b911f1a9-6acb-42e6-a78e-210c9db58f12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Go/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Go/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/其他/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/其他/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/前端领域/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/前端领域/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/操作系统/rancher2.0 环境搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/操作系统/rancher2.0环境搭建.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/运维/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/运维/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +66,7 @@
       <workItem from="1639999369467" duration="2833000" />
       <workItem from="1640172597387" duration="6014000" />
       <workItem from="1640869544314" duration="3555000" />
-      <workItem from="1641535529470" duration="4071000" />
+      <workItem from="1641535529470" duration="4095000" />
     </task>
     <servers />
   </component>
