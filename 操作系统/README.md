@@ -10,9 +10,9 @@
 [个人简历](http://resume.ng2-oa.com/)
 
 ## 目录
-[1.  令牌桶算法](https://wike2019.github.io/wike-blog/Go/令牌桶算法)
+[1.  docker环境搭建](https://wike2019.github.io/wike-blog/操作系统/docker环境搭建)
 
-[2.  go压缩之tar](https://wike2019.github.io/wike-blog/Go/go压缩之tar)
+[2.  rancher2.0 环境搭建](https://wike2019.github.io/wike-blog/Go/rancher2.0环境搭建)
 
 
 ## 关于我

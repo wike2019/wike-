@@ -22,6 +22,11 @@
     <list default="true" id="b911f1a9-6acb-42e6-a78e-210c9db58f12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Go/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Go/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/其他/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/其他/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/前端领域/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/前端领域/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/操作系统/rancher2.0 环境搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/操作系统/rancher2.0环境搭建.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/运维/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/运维/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +45,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/操作系统" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/操作系统" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Vue" />
       <recent name="$PROJECT_DIR$/前端领域" />
       <recent name="$PROJECT_DIR$/Go" />
-      <recent name="$PROJECT_DIR$/其他" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Vue" />
@@ -67,7 +72,7 @@
       <workItem from="1639999369467" duration="2833000" />
       <workItem from="1640172597387" duration="6014000" />
       <workItem from="1640869544314" duration="3555000" />
-      <workItem from="1641535529470" duration="3884000" />
+      <workItem from="1641535529470" duration="4071000" />
     </task>
     <servers />
   </component>
