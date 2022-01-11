@@ -4,6 +4,7 @@
 ## 目录
 [1.  令牌桶算法](https://wike2019.github.io/wike-blog/Go/令牌桶算法)
 
+[2.  go压缩之tar](https://wike2019.github.io/wike-blog/Go/go压缩之tar)
 
 
 ## 关于我
