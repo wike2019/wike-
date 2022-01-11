@@ -13,11 +13,13 @@
     <![endif]-->
     {% include head-custom.html %}
     <style>
+        body{
+            background:#fff!important;
+        }
 
         /*网站样式*/
         a{color:#333;}
         .container{
-            width: 1640px;margin:40px auto;
             padding-bottom:30px;
             background:#fff!important;
         }
@@ -159,8 +161,8 @@
                 <a href="http://resume.ng2-oa.com/">个人简历</a>
             </h2>
         </aside>
-        <section>
+        <main class="main_detail">
             {{ content }}
-        </section>
+        </main>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
