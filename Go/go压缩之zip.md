@@ -174,18 +174,18 @@ func UnZip(dst, src string) (err error) {
 
 header.Name += "/" 这句代码直接使用  /  不太好
 
-### 解决办法
+解决办法
 
 ````
 //header.Name = strings.TrimPrefix(path, filepath.Dir(srcFile) + "/") //原来
 header.Name = strings.TrimPrefix(path, srcFile + string(os.PathSeparator)) //修复
 ```
 
-## 不包含目录文件夹的情况下将文件压缩为 .zip？
+### 不包含目录文件夹的情况下将文件压缩为 .zip？
 
 场景 dst 不带目录直接是一个文件例如 bak.zip
 
-### 解决办法
+解决办法
 
 只需在 zip header 中使用文件的基本名称即可。
 
