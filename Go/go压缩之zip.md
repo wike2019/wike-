@@ -177,8 +177,8 @@ header.Name += "/" 这句代码直接使用  /  不太好
 ### 解决办法
 
 ````
-	    //header.Name = strings.TrimPrefix(path, filepath.Dir(srcFile) + "/") //原来
-		header.Name = strings.TrimPrefix(path, srcFile + string(os.PathSeparator)) //修复
+//header.Name = strings.TrimPrefix(path, filepath.Dir(srcFile) + "/") //原来
+header.Name = strings.TrimPrefix(path, srcFile + string(os.PathSeparator)) //修复
 ```
 
 ## 不包含目录文件夹的情况下将文件压缩为 .zip？
