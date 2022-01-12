@@ -167,7 +167,7 @@ func UnZip(dst, src string) (err error) {
 
 ```
 
-## 常见坑
+### 常见坑
 
 使用我们第一个Zip函数压缩的文件，如果传入的是文件而不是文件夹，例如window下 srcFile是 C:\src\1.zip。
 这样用Unzip函数无法解压，比如destDir路径设置为E:\UnzipFile
