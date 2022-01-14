@@ -24,13 +24,13 @@ io操作本身的效率并不低，低的是频繁的访问本地磁盘的文件
 
 ## 介绍常用读取操作
 
-### func NewReaderSize
+#### func NewReaderSize
 
 func NewReaderSize(rd io.Reader, size int) *Reader
 
 一般只需要把打开的文件句柄传给 NewReaderSize，size可以根据你机器内存，去读对象，系统负载来决定
 
-### func NewReader
+#### func NewReader
 
 func NewReader(rd io.Reader) *Reader
 
@@ -70,7 +70,7 @@ NewScanner创建并返回一个从r读取数据的Scanner，默认的分割函�
 > 这个功能和上面的读取操作最大的区别是，可以指定特定的分割条件，再特殊需求的情况下可以使用。
 
 
-### func (*Scanner) Scan
+#### func (*Scanner) Scan
 
 func (s *Scanner) Scan() bool
 
@@ -88,13 +88,13 @@ if err := scanner.Err(); err != nil {
 }
 ```
 
-### func (*Scanner) Bytes
+#### func (*Scanner) Bytes
 
 func (s *Scanner) Bytes() []byte
 
 Bytes方法返回最近一次Scan调用生成的token。底层数组指向的数据可能会被下一次Scan的调用重写。
 
-### func (*Scanner) Text
+#### func (*Scanner) Text
 
 func (s *Scanner) Text() string
 
@@ -152,25 +152,25 @@ func ScanLines(data []byte, atEOF bool) (advance int, token []byte, err error) {
 ## 介绍常用写入操作
 
 
-### func NewWriterSize
+#### func NewWriterSize
 
 func NewWriterSize(w io.Writer, size int) *Writer
 
 NewWriterSize创建一个具有最少有size尺寸的缓冲、写入w的*Writer。如果参数w已经是一个具有足够大缓冲的*Writer类型值，会返回w。
 
-### func (*Writer) Write
+#### func (*Writer) Write
 
 func (b *Writer) Write(p []byte) (nn int, err error)
 
 Write将p的内容写入缓冲。返回写入的字节数。如果返回值nn < len(p)，还会返回一个错误说明原因。
 
-### func (*Writer) WriteString
+#### func (*Writer) WriteString
 
 func (b *Writer) WriteString(s string) (int, error)
 
 WriteString写入一个字符串。返回写入的字节数。如果返回值nn < len(s)，还会返回一个错误说明原因。
 
-### func (*Writer) Flush
+#### func (*Writer) Flush
 
 func (b *Writer) Flush() error
 
