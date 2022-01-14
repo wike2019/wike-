@@ -14,8 +14,8 @@ io操作本身的效率并不低，低的是频繁的访问本地磁盘的文件
 最后一口气把缓冲区内容写入文件。
 
 
-![image](https://csdn.52wike.com/wike_blog/2022-01-14/ec9a5b2f-00d3-4bc8-a72d-ac8f153fc5c6.png)
 
+![image](https://csdn.52wike.com/wike_blog/2022-01-14/d8910f3a-5b61-4de5-88b2-9cf79f7e9bc1.png)
 
 ## 什么时候需要使用bufio
 
