@@ -16,6 +16,7 @@
 
 [3.  go压缩之zip](https://wike2019.github.io/wike-blog/Go/go压缩之zip)
 
+[4.  go的bufio的使用](https://wike2019.github.io/wike-blog/Go/go的bufio的使用)
 
 
 ## 关于我
