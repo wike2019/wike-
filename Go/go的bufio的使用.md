@@ -127,7 +127,7 @@ SplitFunc可以返回(0, nil, nil)来告诉Scanner读取更多的数据写入切
 然而，如果atEOF为真，data却可能是非空的、且包含着未处理的文本。
 
 
-#### bufio.ScanLines 解析
+### bufio.ScanLines 解析
 
 ```
 
