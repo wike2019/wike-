@@ -28,7 +28,7 @@ io操作本身的效率并不低，低的是频繁的访问本地磁盘的文件
 
 func NewReaderSize(rd io.Reader, size int) *Reader
 
-一般只需要把打开的文件句柄传给 NewReaderSize，size可以根据你机器内存，去读对象，系统负载来决定
+一般只需要把打开的文件句柄传给 NewReaderSize，size可以根据你机器内存，读取对象，系统负载来决定
 
 #### func NewReader
 
