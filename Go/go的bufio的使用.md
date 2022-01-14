@@ -61,7 +61,7 @@ ReadString读取直到第一次遇到delim字节，返回一个包含已读取�
 >  以上2个操作是平时经常使用的唯一的区别只是返回值一个是字节数组一个是字符串，根据你的程序自由选择,如果想按行读取只需要 delim 参数 赋值为 \n
 
 
-### func NewScanner
+#### func NewScanner
 
 func NewScanner(r io.Reader) *Scanner
 
