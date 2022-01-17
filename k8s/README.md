@@ -1,6 +1,15 @@
 
 # wike学习整理
 
+## 网站导航
+
+[首页](https://wike2019.github.io/wike-blog/)
+
+[开源项目](https://github.com/wike2019/)
+
+[个人简历](http://resume.ng2-oa.com/)
+
+
 ## 目录
 [1.  k8s安装](https://wike2019.github.io/wike-blog/k8s/k8s安装)
 
