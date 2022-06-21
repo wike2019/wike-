@@ -14,6 +14,8 @@
 
 [2.  rancher2.0 环境搭建](https://wike2019.github.io/wike-blog/操作系统/rancher2.0环境搭建)
 
+[3. chroot](https://wike2019.github.io/wike-blog/操作系统/chroot)
+
 
 ## 关于我
 
